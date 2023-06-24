@@ -1,0 +1,30 @@
+<div class="card1">
+    <img src="img\icons8-coffee-512.png" class="main11" alt="Avatar" ">
+    <hr widht="10px">
+    <div class="container1">
+      <a href="# " class="main10"><h4><b>Buy me a Coffee</b></h4> </a>
+    </div>
+  </div>
+  .card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .container1 {
+    padding: 2px 16px;
+  }
+  a.main10{
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #5A47AB;
+   
+  }
+  a.main10:hover{
+    text-decoration: none;
+    color: #D05270;
+
+  }
+  a.main10:visited{
+    text-decoration: none;
+  }
+  a.main10:active{
+    text-decoration: none;
+  }
