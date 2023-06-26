@@ -13,6 +13,16 @@ body{
   font-size: 11px;
 
 }
+h1.alp31{
+  background: -webkit-linear-gradient(#D05270, #3d11ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  font-size: 30px;
+  font-family: Montserrat;
+  font-weight: bolder;
+  padding-bottom: 10px;
+
+}
 .rounded{
   height:40%;
   width: 40%;
@@ -303,6 +313,16 @@ display: inline-flex;
     height: 100%;
     width: 100%;
     display: none;    
+  }
+  h1.alp31{
+    background: -webkit-linear-gradient(#D05270, #3d11ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: bolder;
+    padding-bottom: 10px;
+  
   }
   img.main15{
     display: block;

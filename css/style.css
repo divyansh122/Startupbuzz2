@@ -155,14 +155,14 @@ a.Button1:hover{
 }
 .card{
   box-sizing: border-box;
-  border:#ffffff solid 1px;
+  border:#c57575 solid 1px;
   height: 100%;
   transition: 0.3s;
 
 
 }
 .card:hover{
-  box-shadow: 0 8px 16px 0 #424242;
+  box-shadow: 0 8px 16px 0 #957bda;
   transform:scale(1.01,1.01)
   
 
@@ -386,31 +386,27 @@ width: 100%;
 .divider {
   border-top: 2px solid
 }
-form.main14 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-    
-    & > input {
-      flex: 1 1 10ch;
-      margin: 1rem;
-      
-      &[type="email"] {
-        flex: 3 1 40ch;
-        height: 30px;
-          }
-    }
+
+  .card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
-  
-  input.main13 {
-    border: none;
-    background: hsl(0 0% 93%);
-    border-radius: .25rem;
-    padding: .75rem 1rem;
-    
-    &[type="submit"] {
-      background:#5A47AB;
-      color: white;
-      box-shadow: 0 .75rem .5rem -.5rem hsl(0 50% 80%);
-    }
+  .container1 {
+    padding: 2px 16px;
+  }
+  a.main10{
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #5A47AB;
+   
+  }
+  a.main10:hover{
+    text-decoration: none;
+    color: #D05270;
+
+  }
+  a.main10:visited{
+    text-decoration: none;
+  }
+  a.main10:active{
+    text-decoration: none;
   }

@@ -288,11 +288,26 @@
   margin-bottom: 10px;
   padding:2px 2px 2px 2px;
   }
+  h1.alp31{
+    background: -webkit-linear-gradient(#D05270, #3d11ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: bolder;
+    padding-bottom: 10px;
+
+  }
+ 
   a.main20:hover{
   color: #D05270;
   }
   .main20{
   display: inline-flex;
+  }
+  iframe.alp20{
+    height:250px;
+    width: 300px;
   }
   @media all and (max-width:900px){
     span.main1{
@@ -312,6 +327,16 @@
       width: 100%;
       margin-top: 30px;
       margin-bottom: 20px;
+    }
+    h1.alp31{
+      background: -webkit-linear-gradient(#D05270, #3d11ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
+      font-size: 20px;
+      font-family: Montserrat;
+      font-weight: bolder;
+      padding-bottom: 10px;
+  
     }
     .card{
       width: 100%;
