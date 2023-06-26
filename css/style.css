@@ -155,11 +155,15 @@ a.Button1:hover{
 }
 .card{
   box-sizing: border-box;
-  border:#000000 solid 2px;
+  border:#ffffff solid 1px;
+  height: 100%;
+  transition: 0.3s;
+
 
 }
 .card:hover{
   box-shadow: 0 8px 16px 0 #424242;
+  transform:scale(1.01,1.01)
   
 
 }
@@ -243,6 +247,12 @@ h4.main24{
   }
   .ind1{
     margin-bottom: 50px;
+  }
+  .card{
+    box-sizing: border-box;
+    border: #424242 solid 1px;
+    height: 100%;
+  
   }
   p.main3{
     font-size: 13px;
