@@ -28,3 +28,63 @@
   a.main10:active{
     text-decoration: none;
   }
+  function generatePDF() {
+
+    // task 2 - initialise the document
+    var pdf = new jsPDF();
+   // pdf.text(50,50,"HELLO WORLD")
+    // task 2 - get document properties
+    var pageWidth=pdf.internal.pageSize.width;
+    var pageHeight=pdf.internal.pageSize.Height;
+    console.log("pageWidth="+pageWidth);
+    console.log("page height="+pageHeight)
+    // task 2 - set document properties
+    pdf.setProperties({
+        title:"your personalized payement ",
+        subject:"payments",
+        author:"hello world autos",
+        keywords:"autos,payment,sales",
+    })
+    // task 3 - text and fonts
+    pdf.setFont("arial");
+    pdf.setFontType("bold");
+    pdf.setFontSize(30);
+    pdf.setTextColor(0,0,139);
+    pdf.text(pageWidth/2,15,"Your personalized Payment Plan","center");
+    var vehicleMake=document.getElementById("vehicle-make").innerHTML;
+    var vehicleModel=document.getElementById("vehicle-model").innerHTML;
+    var vehiclePrice=document.getElementById("vehicle-price").innerHTML;
+    pdf.text(pageWidth/2,160,vehicleMake  +" "+vehicleModel,"center" );
+    pdf.setTextColor("240,0,0");
+    pdf.setFontSize(25);
+    pdf.text(pageWidth/2,170,vehiclePrice,"center");
+    // task 4 - display the rest of the payment details
+    var paymentDuration=document.getElementById("payment-duration").innerHTML;
+    var interestRate=document.getElementById("interest-rate").innerHTML;
+    var totalPayment=document.getElementById("total-payment").innerHTML;
+    var totalInterest=document.getElementById("total-interest") .innerHTML;
+    var monthlyPayment=document.getElementById("monthly-payment").innerHTML;
+    pdf.setTextColor(0,0,0);
+    pdf.setFontSize(20);
+    pdf.text(pagewidht/2,200,paymentDuration+"for "+interestRate,"center");
+    pdf.text(pageWidth/2,210,"Total Payment:"+totalPayment,"center");
+    padf.text(pageWidth/2,220,"Total Interest:"+totalInterest,"center");
+    pdf.setTextColor(0,128,0);
+    pdf,setFontSize(23);
+    pdf.text(pageWidth/2,245,"Monthly Payment:"+monthlyPayment,"center");
+    // task 5 - image
+
+    // task 6 - lines
+
+    // task 7 - draw graphics
+
+    // task 2 - launch the preview
+
+    // if we want to download directly:
+    // pdf.save("hello-world.pdf");
+    var output=pdf.output("bloburl");
+    console.log(output);
+    window.open(output,"_blank");
+}
+
+// generatePDF();
